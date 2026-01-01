@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャビネット収容計算アプリ</title>
+    <meta name="description" content="PC機器の収納に必要なキャビネット台数を自動計算するアプリケーション">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🗄️ キャビネット収容計算</h1>
+            <p class="subtitle">PC機器の収納に必要なキャビネット台数を自動計算</p>
+        </header>
+
+        <div class="cabinet-info">
+            <h2>キャビネット仕様</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="info-label">内寸サイズ</span>
+                    <span class="info-value">455mm × 690mm × 1260mm</span>
+                </div>
+                <div class="info-item">
+                    <span class="info-label">容積</span>
+                    <span class="info-value">395,577,000 mm³</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="result-card">
+            <div class="result-content">
+                <div class="result-item">
+                    <span class="result-label">合計容積</span>
+                    <span class="result-value" id="totalVolume">0 mm³</span>
+                </div>
+                <div class="result-item highlight">
+                    <span class="result-label">必要キャビネット台数</span>
+                    <span class="result-value large" id="cabinetsNeeded">0台</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="equipment-section">
+            <h2>PC機器リスト</h2>
+            <div class="table-container">
+                <table id="equipmentTable">
+                    <thead>
+                        <tr>
+                            <th>No.</th>
+                            <th>機器名称</th>
+                            <th>縦 (mm)</th>
+                            <th>横 (mm)</th>
+                            <th>高さ (mm)</th>
+                            <th>台数</th>
+                            <th>容積 (mm³)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="equipmentBody">
+                        <!-- 50行分のフォームがJavaScriptで生成されます -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
