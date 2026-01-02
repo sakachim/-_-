@@ -42,11 +42,3 @@ https://[あなたのユーザー名].github.io/cabinet-calculator/
 ## 📄 ライセンス
 
 MIT License
-
-## 🤝 貢献
-
-プルリクエストを歓迎します！
-
-## 📧 お問い合わせ
-
-問題や質問がある場合は、Issueを作成してください。
